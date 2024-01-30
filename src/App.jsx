@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer greeting={'¡Encontra tu camiseta retro favorita aqui en Mate Amargo!'} />
+      <ItemListContainer greeting={'Encontra tu camiseta retro favorita aqui en Mate Amargo!'} />
     </>
   )
 }

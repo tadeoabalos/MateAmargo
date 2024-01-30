@@ -1,5 +1,5 @@
 import React from 'react'
-import { ShoppingCart } from './assets/ShoppingCart'
+import {ShoppingCart} from './assets/ShoppingCart'
 export const CartWidget = () => {
   return (
     <div>

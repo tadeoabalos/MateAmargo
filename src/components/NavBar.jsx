@@ -8,7 +8,7 @@ export const NavBar = () => {
         <ul className="listaNavBar">
           <li><a href="#">Camisetas</a></li>
           <li><a href="#">Accesorios</a></li>
-          <li><a href="#">Merch</a></li>          
+          <li><a href="#">Merchandising</a></li>          
         </ul>       
         <CartWidget className="cart"/>
     </nav>
