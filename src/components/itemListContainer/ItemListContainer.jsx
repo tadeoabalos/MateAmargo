@@ -1,7 +1,13 @@
+import { Product } from "../Product/Product"
+
 export const ItemListContainer = ({ greeting }) => {
   return (
-    <div>
-      <h1>{greeting}</h1>
-    </div>
+    <>
+      <h1 className="greeting">{greeting}</h1>
+      <div className="main-container">
+        <Product nameProduct={"Camiseta Mate Amargo 2022"}  priceProduct={5200}/>
+        
+      </div>
+    </>
   )
 }
