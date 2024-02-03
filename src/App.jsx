@@ -8,7 +8,7 @@ function App() {
     <>
       <NavBar />
       <ItemListContainer greeting={'Encontra tu camiseta retro favorita aqui en Mate Amargo!'} />
-      <Product nameProduct={"Camiseta Mate Amargo 2022"}  priceProduct={2500}/>
+      <Product nameProduct={"Camiseta Mate Amargo 2022"}  priceProduct={5200}/>
     </>
   )
 }
