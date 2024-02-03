@@ -51,5 +51,53 @@
 }
 
 .navbar .listaNavBar li a:hover {
-  color: rgba(255, 217, 0, 0.664);
+  color: #274939;
+}
+
+.product-container {
+  position: relative; /* Añade posición relativa solo al contenedor de producto */
+  background-color: #fefefe;
+  width: 15vw;
+  min-height: 350px;
+  max-height: 400px;
+  margin: 10px;
+  border: solid 4px #274939;
+  border-radius: 5px;  
+}
+
+.foot-product {
+  position: absolute; /* Posición absoluta para el pie de página */
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #274939;
+  color: #fefefe;
+}
+
+.foot-product button {
+  height: auto;
+  background-color: #274939;
+  color: #fefefe;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  transition: all 0.3s;
+  border: solid 1px #fefefe;
+}
+
+
+.foot-product button:hover {
+  background-color: #fefefe;
+  color: #274939;
+  cursor: pointer;
+  border: solid 1px #fefefe;
+}
+
+.product-container h4 {
+  margin-top: 0;
+  display: block;
+  background-color: #274939;
+  width: 100%;
+  color: #fefefe;
 }
