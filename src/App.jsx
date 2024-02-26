@@ -1,16 +1,22 @@
-import { useState } from 'react'
 import './App.css'
-import { NavBar } from './components/NavBar'
-import { Product } from './components/Product/Product'
-import { UseStateBtn } from './components/UseState/UseStateBtn'
-import { ItemListContainer } from './components/itemListContainer/ItemListContainer'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ItemListContainer, ItemDetailContainer, NavBar, NoPage, Cart } from './components/index'
+import './index.css'
 function App() {
   return (
-    <>
+    <BrowserRouter>        
       <NavBar />
-      <ItemListContainer greeting={'¡Encontra tu camiseta retro favorita aca en Mate Amargo!'} />
-    </>
+      <Routes>
+        <Route path='/' element={<ItemListContainer greeting={'¡Encontra tu camiseta retro favorita aca en Mate Amargo!'} /> }/>                    
+        <Route path='/detalle_camiseta/:id' element={<ItemDetailContainer /> }/>
+        <Route path='/category/:category' element={<ItemListContainer /> }/>                     
+        <Route path='category/national/:wc' element={<ItemListContainer /> }/>
+        <Route path='/category/:category/:country' element={<ItemListContainer /> }/>
+        <Route path='/category/:category/continent/:continent' element={<ItemListContainer /> }/>                         
+        <Route path='/cart' element={<Cart /> }/>                      
+        <Route path='*' element={<NoPage /> }/>                     
+      </Routes>      
+    </BrowserRouter>
   )
 }
 

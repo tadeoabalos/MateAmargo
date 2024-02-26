@@ -1,0 +1,7 @@
+.list-products {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1220px;
+}

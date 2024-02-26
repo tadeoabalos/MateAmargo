@@ -1,21 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400;1,700&display=swap');
 
+
 #root {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0 auto;
   text-align: center;
   width: 100%;
+  height: 100vh;
 }
 
 .greeting {
-  color: #274939;
-}
-
-.main-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   color: #274939;
 }
 
@@ -40,7 +34,7 @@
 }
 
 .navbar .icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .navbar .listaNavBar {
@@ -52,10 +46,6 @@
   padding: 0 20px;
 }
 
-.navbar .listaNavBar li:hover {
-  transform: scale(1.1);
-}
-
 .navbar .listaNavBar a {
   text-decoration: none;
   font-size: 20px;
@@ -63,59 +53,48 @@
 }
 
 .navbar .listaNavBar li a:hover {
-  color: #fefefe;
+  color: #fefefe; 
+}  
+
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.product-container {
-  position: relative; /* Añade posición relativa solo al contenedor de producto */
-  background-color: #fefefe;
-  width: 15vw;
-  min-height: 350px;
-  max-height: 400px;
-  margin: 20px;
-  border: solid 1px #274939;
-  border-radius: 2px;  
-  transition: all 0.5s;
+.cart h4 {
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 20px;
+  color: black;
 }
 
-.product-container:hover {
-  transform: scale(1.1);
-}
-
-.foot-product {
-  position: absolute; /* Posición absoluta para el pie de página */
-  bottom: 0;
-  width: 100%;
+.drop-down {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #274939;
-  color: #fefefe;
-}
-
-.foot-product button {
-  height: 40px;
-  width: 50%;
-  background-color: #274939;
-  color: #fefefe;
-  border: none;
-  font-family: 'Nunito', sans-serif;
-  transition: all 0.3s;
-  border: solid 1px #fefefe;
-}
-
-
-.foot-product button:hover {
-  background-color: #fefefe;
-  color: #274939;
-  cursor: pointer;
-  border: solid 1px #fefefe;
-}
-
-.product-container h4 {
+  list-style: none;
+  background-color: #27493988;
   margin-top: 0;
-  display: block;
-  background-color: #274939;
-  width: 100%;
-  color: #fefefe;
+  padding-top: 8px;
+  padding-bottom: 8px ;
+}
+
+
+.drop-down img {
+  max-height: 100px;
+  max-width: 100px;
+  filter: grayscale(85%);
+  transition: all 0.3s;
+}
+
+.drop-down img:hover {
+  filter: grayscale(0%);
+  cursor: pointer;  
+}
+
+.nav-link.active img {
+  filter: grayscale(0%);
 }
