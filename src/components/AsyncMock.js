@@ -41,8 +41,7 @@ export const getClubByCountry = (product) => {
         else reject("404");
     })
 }
-export const getClubByContinent = (product) => {       
-    console.log("Nos quitamos lo puesto"); 
+export const getClubByContinent = (product) => {           
     return new Promise ((resolve, reject) => {
         if(productsList.length > 0) {
             setTimeout(() => {

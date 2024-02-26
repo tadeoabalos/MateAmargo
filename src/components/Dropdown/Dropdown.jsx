@@ -9,7 +9,7 @@ export const Dropdown = ({filter}) => {
                 {
                 filter.map((logo, index) => (
                     <li key={index}>
-                        <NavLink className="nav-link" to={ filter === wclogo ? `/category/national/${logo.alt}` : `category/club/${logo.alt}` }><img src={logo.src} alt={logo.alt}/></NavLink>
+                        <NavLink className="nav-link" to={ filter === wclogo ? `/category/worldcup/${logo.alt}` : `category/club/${logo.alt}` }><img src={logo.src} alt={logo.alt}/></NavLink>
                     </li>
                 ))}
             </ul>

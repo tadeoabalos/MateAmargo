@@ -12,8 +12,7 @@ export const ItemCount = ({initial, stock, onAdd}) => {
     const decrement = () => {
         quantity > 1 ? setQuantity(quantity - 1) : setQuantity(quantity);
     }
-  
-    
+      
     return (
     <div className='counter'>
         <div className='controlers flex place-content-center'>            

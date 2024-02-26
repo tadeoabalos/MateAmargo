@@ -7,8 +7,8 @@ export const ItemListContainer = ({ greeting }) => {
 
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const {category, country, wc, continent} = useParams();   
-  console.log(continent)
+  const {category, country, wc, continent} = useParams();       
+  console.log(wc)
   useEffect(() => {    
     let asyncFunc = getProducts
     let parametro 
@@ -20,18 +20,15 @@ export const ItemListContainer = ({ greeting }) => {
       asyncFunc = getProductsByWC
       parametro = wc
     }
-    if(category && country){   
-      console.log("Hola!")   
+    if(category && country){              
       asyncFunc = getClubByCountry
       parametro = {category, country}
-    }    
-    if(category && continent){      
-      console.log("Hola!")
+    }      
+    if(category && continent){            
       asyncFunc = getClubByContinent
       parametro = {category, continent}
     }   
     
-
     asyncFunc(parametro)
       
       .then(response => 
@@ -47,8 +44,7 @@ export const ItemListContainer = ({ greeting }) => {
   return (
     <>
       <h3 className="greeting">{greeting}</h3>          
-      {isLoading ? <h3>Cargando...</h3> : <ItemList products={products} /> }
-         
+      {isLoading ? <h3>Cargando...</h3> : <ItemList products={products} /> }         
     </>
   )
 }

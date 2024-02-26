@@ -1,9 +1,8 @@
 import React from 'react'
-import { ItemCount } from '../ItemCount/ItemCount'
 import { Flag } from '../Item/Assets/Flag'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ItemPath } from '../ItemPath/ItemPath'
+import { ItemPath, ItemCount } from '../index'
 
 export const ItemDetail = ({name, price, description, country, category, continent, img, year, stock, size}) => {
 
@@ -15,7 +14,7 @@ export const ItemDetail = ({name, price, description, country, category, contine
       <div className='flex place-content-start'>
         <ItemPath category={category} continent={continent} country={country} />
       </div>            
-      <article className='bg-white h-2/3 w-3/4 shadow-2xl rounded p-10 flex items-start'>        
+      <article className='bg-white h-3/4 w-3/4 shadow-2xl rounded p-10 flex items-start'>        
         <section className='h-2/3 w-2/5 flex justify-center'>          
           <img className='rounded min-h-96 max-h-96' src={img} alt={name}></img>            
         </section>                            
@@ -28,7 +27,7 @@ export const ItemDetail = ({name, price, description, country, category, contine
             <hr/>                                                                            
             <p className='py-2 text-green-700'>Talle: <span className='text-black'>{size}</span></p>                                                                            
             <hr/>                                                                            
-            <div className='py-2 text-green-700'><Flag country={country} size={24}/>    </div>                                                                       
+            <div className='py-2 text-green-700'><Flag country={country} size={24}/></div>                                                                       
             <hr/>                                                                            
             <p className='py-2 text-green-700'>Precio: <span className='text-black font-bold'>${price}</span></p>                                                                            
           </div>
