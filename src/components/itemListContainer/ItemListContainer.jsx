@@ -8,7 +8,6 @@ export const ItemListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const {category, country, wc, continent} = useParams();       
-  console.log(wc)
   useEffect(() => {    
     let asyncFunc = getProducts
     let parametro 

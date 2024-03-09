@@ -2,7 +2,7 @@ import './item.css'
 import { Link } from 'react-router-dom'
 import { Flag } from '../Item/Assets/Flag'
 
-export const Item = ({id, name, price, description, country, img}) => {
+export const Item = ({id, name, price, country, img}) => {
 
   const flag = `https://flagsapi.com/${country}/flat/48.png`;
 
@@ -14,8 +14,8 @@ export const Item = ({id, name, price, description, country, img}) => {
             <h4 className='card-name'>{name}</h4>
             <div className='card-detail'>
               <p className='card-price'>${price}</p>  
-              <Link onClick={() => { setisOpen(false) } } to={`/detalle_camiseta/${id}`}>
-                <button >Detalle</button>
+              <Link to={`/detalle_camiseta/${id}`}>
+                <button>Detalle</button>
               </Link>              
             </div>                                                   
         </section>                 

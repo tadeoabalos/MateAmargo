@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Flag } from '../Item/Assets/Flag'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ItemPath, ItemCount } from '../index'
+import { CartContext } from '../../context/CartContext'
 
-export const ItemDetail = ({name, price, description, country, category, continent, img, year, stock, size}) => {
+export const ItemDetail = ({id, name, price, description, country, category, continent, img, year, stock, size}) => {  
+  const { addItem } = useContext(CartContext);
 
-  const [quantityOnAdd, setQuantityOnAdd ] = useState(0)
+  const handleOnAdd = ( quantity ) => {      
+      const item = {id, price, name, stock, img};
 
-  const handleOnAdd = ( quantity ) => { setQuantityOnAdd(quantity) }
+      addItem(item, quantity);      
+   }
+
   return (
     <div className='h-full flex flex-col place-items-center justify-center'>
       <div className='flex place-content-start'>
@@ -31,10 +36,16 @@ export const ItemDetail = ({name, price, description, country, category, contine
             <hr/>                                                                            
             <p className='py-2 text-green-700'>Precio: <span className='text-black font-bold'>${price}</span></p>                                                                            
           </div>
-          {
-            quantityOnAdd > 0 ? ( <Link to="/cart" className='bg-green-700 h-10 w-52 mt-1 flex items-center pl-2 place-content-center hover:cursor-pointer hover:bg-green-800 hover:rounded transition-all duration-300' ><button>Terminar Compra</button></Link>) :
-            <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
-          }                    
+          <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
+          {/*
+            quantityOnAdd > 0 ? (                 
+                <div>
+                  <Link to="/cart">"<button className='bg-green-700 h-10 w-52 mt-1 flex items-center pl-2 place-content-center hover:cursor-pointer hover:bg-green-800 hover:rounded transition-all duration-300'>
+                    Terminar Compra</button></Link>
+                  <button onClick={() => { quantityOnAdd === 0 }} className='text-green-700 bg-white'>Volver</button>
+                </div>                
+              ) :            
+            */}                    
         </section>
     </article>
     </div>    
