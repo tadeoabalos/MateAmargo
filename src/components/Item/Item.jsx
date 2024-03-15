@@ -2,12 +2,12 @@ import './item.css';
 import { Link } from 'react-router-dom';
 import { Flag } from '../Item/Assets/Flag';
 import { useState, useContext } from 'react';
-import { LikeButton } from '../likeButton/likeButton';
+import { LikeButton } from '../LikeButton/likeButton';
 import { WishListContext } from '../../context/WishListContext';
 
 export const Item = ({ id, name, price, country, img }) => {  
   const [like, setLike] = useState(false);
-  const { addItem } = useContext(WishListContext);
+  const { addItem , removeItem } = useContext(WishListContext);
 
   const handleOnAdd = () => {      
     const item = { id, price, name, img };                    
@@ -18,7 +18,15 @@ export const Item = ({ id, name, price, country, img }) => {
     <article className='card'>
         <div className='card-header'>
           <Flag country={country} size={24}/>
-          <button onClick={() => {setLike(!like); handleOnAdd();}}>
+          <button onClick={() => {
+            if( like ){
+              removeItem(id)
+            }
+            else {
+              handleOnAdd()
+            }
+            setLike(!like)
+          }}>
             <LikeButton like={like}/>
           </button>
         </div>        
