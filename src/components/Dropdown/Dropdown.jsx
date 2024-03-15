@@ -12,7 +12,7 @@ export const Dropdown = ({filter}) => {
                         <NavLink className="nav-link" to={ filter === wclogo ? `/category/worldcup/${logo.alt}` : `category/club/${logo.alt}` }><img src={logo.src} alt={logo.alt}/></NavLink>
                     </li>
                 ))}
-            </ul>
+            </ul>            
         </>
     );
 };

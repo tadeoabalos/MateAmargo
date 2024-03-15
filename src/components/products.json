@@ -1,6 +1,5 @@
 [
-    {
-        "id": 1,
+    {       
         "name": "Camiseta Alternativa Selección Argentina 2006",
         "price": 6000,
         "description": "¡Ponele onda al estilo con esta camiseta de colección! Hecha de poliéster, apenas usada y en excelente estado, esta joya te lleva de vuelta a la época dorada del fútbol argentino en el Mundial 2006. ¡No te pierdas la oportunidad de lucir los colores albicelestes con actitud!",
@@ -13,8 +12,7 @@
         "year": 2006,
         "size": "M"
     },
-    {
-        "id": 2,
+    {       
         "name": "Camiseta Selección Italia 2006",
         "price": 7500,
         "description": "¡Luce el estilo italiano con esta camiseta clásica! Confeccionada en poliéster y en condiciones impecables, esta camiseta te transporta a la gloria de Italia en el Mundial 2006. ¡Destaca entre la multitud con el emblemático diseño azzurri!",
@@ -27,8 +25,7 @@
         "year": 2006,
         "size": "L"
     },
-    {
-        "id": 3,
+    {       
         "name": "Camiseta Selección República Checa 2006",
         "price": 5520,
         "description": "¡Destaca con este clásico de la República Checa! Esta camiseta de poliéster, en excelente estado y apenas usada, es un tesoro del Mundial 2006. ¡Demuestra tu apoyo con estilo y originalidad!",
@@ -41,8 +38,7 @@
         "year": 2006,
         "size": "S"
     },
-    {
-        "id": 4,
+    {       
         "name": "Camiseta Selección Inglaterra 2002",
         "price": 5520,
         "description": "¡Revive el legado de los Tres Leones con esta camiseta clásica! Fabricada en poliéster y en perfecto estado, esta camiseta te lleva de vuelta al Mundial 2002. ¡Hazte notar con el estilo inconfundible de Inglaterra!",
@@ -55,8 +51,7 @@
         "year": 2002,
         "size": "XL"
     },
-    {
-        "id": 5,
+    {       
         "name": "Camiseta Selección España 2006",
         "price": 5520,
         "description": "¡Demuestra tu pasión por La Roja con esta camiseta de ensueño! Fabricada en poliéster y en condiciones impecables, esta camiseta te lleva de vuelta a la gloria de España en el Mundial 2006. ¡Destaca con el estilo único de España!",
@@ -69,8 +64,7 @@
         "year": 2006,
         "size": "M"
     },
-    {
-        "id": 6,
+    {       
         "name": "Camiseta Selección Francia 1998",
         "price": 5520,
         "description": "¡Celebra la grandeza del fútbol francés con esta camiseta icónica! Hecha de poliéster y con muy poco uso, esta camiseta te transporta a la victoria de Francia en el Mundial 1998. ¡Luce el estilo retro con orgullo! ",
@@ -83,8 +77,7 @@
         "year": 1998,
         "size": "L"
     },
-    {
-        "id": 7,
+    {       
         "name": "Camiseta Selección Rumania 1994",
         "price": 5520,
         "description": "¡Revive los momentos de gloria de Rumania con esta joya vintage! Fabricada en poliéster y en excelente estado, esta camiseta es un tesoro del Mundial 1994. ¡Destaca con el estilo único de Rumania!",
@@ -97,8 +90,7 @@
         "year": 1994,
         "size": "S"
     },
-    {
-        "id": 8,
+    {       
         "name": "Camiseta Selección Brasil 1994",
         "price": 5520,
         "description": "¡Luce los colores de la Canarinha con esta camiseta clásica! Fabricada en poliéster y en perfecto estado, esta camiseta te lleva de vuelta a la gloria de Brasil en el Mundial 1994. ¡Hazte notar con el estilo inconfundible de Brasil!",
@@ -111,8 +103,7 @@
         "year": 1994,
         "size": "XL"
     },
-    {
-        "id": 9,
+    {       
         "name": "Camiseta Selección Uruguay 2010",
         "price": 5520,
         "description": "¡Apoya a Uruguay con estilo con esta camiseta oficial! Fabricada en poliéster y en excelente estado, esta camiseta te lleva de vuelta a la emoción del Mundial 2010. ¡Luce el estilo celeste con orgullo!",
@@ -126,7 +117,7 @@
         "size": "M"
     },
     {
-        "id": 10,
+    
         "name": "Camiseta Selección Corea del Sur 2002",
         "price": 5520,
         "description": "¡Celebra el legado del fútbol surcoreano con esta camiseta vibrante! Hecha de poliéster y con muy poco uso, esta camiseta te transporta a la emoción del Mundial 2002. ¡Destaca con el estilo único de Corea del Sur!",
@@ -140,7 +131,7 @@
         "size": "L"
     },
     {
-        "id": 11,
+    
         "name": "AC Milan 2006/2007 Season Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -163,8 +154,7 @@
         "stock": 8,
         "year": 2000
     },
-    {
-        "id": 13,
+    {        
         "name": "FC Barcelona 2008/2009 Season Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -175,8 +165,7 @@
         "stock": 8,
         "year": 2008
     },
-    {
-        "id": 14,
+    {        
         "name": "Arsenal 2006/2007 Season Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -187,8 +176,7 @@
         "stock": 8,
         "year": 2006
     },
-    {
-        "id": 15,
+    {        
         "name": "Japan 2002 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -200,8 +188,7 @@
         "stock": 8,
         "year": 2002
     },
-    {
-        "id": 16,
+    {        
         "name": "Germany 2006 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -213,8 +200,7 @@
         "stock": 8,
         "year": 2006
     },
-    {
-        "id": 17,
+    {        
         "name": "Denmark 1992 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -226,8 +212,7 @@
         "stock": 8,
         "year": 1992
     },
-    {
-        "id": 18,
+    {        
         "name": "Ferrocarril Oeste 1999/2000 Season Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -238,8 +223,7 @@
         "stock": 8,
         "year": 1999
     },
-    {
-        "id": 19,
+    {        
         "name": "Argentina 1986 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -251,8 +235,7 @@
         "stock": 8,
         "year": 1986
     },
-    {
-        "id": 20,
+    {        
         "name": "Brazil 2002 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -264,8 +247,7 @@
         "stock": 8,
         "year": 2002
     },
-    {
-        "id": 21,
+    {        
         "name": "Portugal 2006 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -277,8 +259,7 @@
         "stock": 8,
         "year": 2006
     },
-    {
-        "id": 22,
+    {        
         "name": "Italy 1994 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -290,8 +271,7 @@
         "stock": 8,
         "year": 1994
     },
-    {
-        "id": 23,
+    {        
         "name": "Ivory Coast 2006 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -303,8 +283,7 @@
         "stock": 8,
         "year": 2006
     },
-    {
-        "id": 24,
+    {        
         "name": "Real Madrid 1999/2000 Season Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -315,8 +294,7 @@
         "stock": 8,
         "year": 1999
     },
-    {
-        "id": 25,
+    {        
         "name": "River Plate 1996/1997 Season Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -327,8 +305,7 @@
         "stock": 8,
         "year": 1996
     },
-    {
-        "id": 26,
+    {        
         "name": "Independiente 1994 Season Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -339,8 +316,7 @@
         "stock": 8,
         "year": 1994
     },
-    {
-        "id": 27,
+    {        
         "name": "Racing Club 2001 Season Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -351,8 +327,7 @@
         "stock": 8,
         "year": 2001
     },
-    {
-        "id": 28,
+    {        
         "name": "Ghana 2010 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -364,8 +339,7 @@
         "stock": 8,
         "year": 2010
     },
-    {
-        "id": 29,
+    {        
         "name": "Netherlands 1978 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -377,8 +351,7 @@
         "stock": 8,
         "year": 1978
     },
-    {
-        "id": 30,
+    {        
         "name": "Argentina 1978 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -391,7 +364,7 @@
         "year": 1978
     },
     {
-        "id": 31,
+        
         "name": "Brasil 1978 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -404,7 +377,7 @@
         "year": 1978
     },
     {
-        "id": 32,
+        
         "name": "Italy 1978 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -417,7 +390,7 @@
         "year": 1978
     },
     {
-        "id": 33,
+        
         "name": "Italy 1982 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -430,7 +403,7 @@
         "year": 1982
     },
     {
-        "id": 34,
+        
         "name": "Germany 1982 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -443,7 +416,7 @@
         "year": 1982
     },
     {
-        "id": 35,
+        
         "name": "Poland 1982 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -456,7 +429,7 @@
         "year": 1982
     },
     {
-        "id": 36,
+        
         "name": "France 1982 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -469,7 +442,7 @@
         "year": 1982
     },
     {
-        "id": 37,
+        
         "name": "West Germany 1990 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -482,7 +455,7 @@
         "year": 1990
     },
     {
-        "id": 38,
+        
         "name": "Argentina 1990 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -495,7 +468,7 @@
         "year": 1990
     },
     {
-        "id": 39,
+        
         "name": "Italy 1990 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -508,7 +481,7 @@
         "year": 1990
     },
     {
-        "id": 40,
+        
         "name": "England 1990 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -521,7 +494,7 @@
         "year": 1990
     },
     {
-        "id": 41,
+        
         "name": "West Germany 1986 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -534,7 +507,7 @@
         "year": 1986
     },
     {
-        "id": 42,
+        
         "name": "France 1986 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -547,7 +520,7 @@
         "year": 1986
     },
     {
-        "id": 43,
+        
         "name": "Belgium 1986 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -560,7 +533,7 @@
         "year": 1986
     },
     {
-        "id": 44,
+        
         "name": "Sweden 1994 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -573,7 +546,7 @@
         "year": 1994
     },
     {
-        "id": 45,
+        
         "name": "Brazil 1998 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -586,7 +559,7 @@
         "year": 1998
     },
     {
-        "id": 46,
+        
         "name": "Netherlands 1998 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -599,7 +572,7 @@
         "year": 1998
     },
     {
-        "id": 47,
+        
         "name": "Croatia 1998 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -612,7 +585,7 @@
         "year": 1998
     },
     {
-        "id": 48,
+        
         "name": "Spain 2010 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -625,7 +598,7 @@
         "year": 2010
     },
     {
-        "id": 49,
+        
         "name": "Netherlands 2010 National Team Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -638,7 +611,7 @@
         "year": 2010
     },
     {
-        "id": 50,
+        
         "name": "Bayern Munchen 2000/2001 Season Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -650,7 +623,7 @@
         "year": 2000
     },
     {
-        "id": 51,
+        
         "name": "Borussia Dortmund 2000/2001 Season Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -662,7 +635,7 @@
         "year": 2000
     },
     {
-        "id": 52,
+        
         "name": "Wender Bremen 2003/2004 Season Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -674,7 +647,7 @@
         "year": 2003
     },
     {
-        "id": 53,
+        
         "name": "Stuttgart 2006/2007 Season Shirt",
         "price": 5520,
         "description": "Shirt made of polyester, with very little use in excellent condition",
@@ -686,7 +659,7 @@
         "year": 2003
     },
     {
-        "id": 54,
+        
         "name": "Valencia 2000/2001 Season Shirt",
         "price": 5000,
         "description": "Official shirt worn by Valencia during the 2000/2001 season.",
@@ -698,7 +671,7 @@
         "year": 2000
       },
       {
-        "id": 55,
+        
         "name": "Inter Milan 2009/2010 Season Shirt",
         "price": 5500,
         "description": "Official shirt worn by Inter Milan during the 2001/2002 season.",
@@ -710,7 +683,7 @@
         "year": 2010
       },
       {
-        "id": 56,
+        
         "name": "AS Roma 2009/2010 Season Shirt",
         "price": 5000,
         "description": "Official shirt worn by AS Roma during the 2000/2001 season.",
@@ -722,7 +695,7 @@
         "year": 2010
       },
       {
-        "id": 57,
+        
         "name": "Ajax 2002/2003 Season Shirt",
         "price": 5500,
         "description": "Official shirt worn by Ajax during the 2002/2003 season.",
@@ -734,7 +707,7 @@
         "year": 2002
       },
       {
-        "id": 58,
+        
         "name": "PSV Eindhoven 2004/2005 Season Shirt",
         "price": 5500,
         "description": "Official shirt worn by PSV Eindhoven during the 2004/2005 season.",
@@ -746,7 +719,7 @@
         "year": 2004
       },
       {
-        "id": 59,
+        
         "name": "Feyenoord 2001/2002 Season Shirt",
         "price": 5000,
         "description": "Official shirt worn by Feyenoord during the 2001/2002 season.",
@@ -758,7 +731,7 @@
         "year": 2001
       },
       {
-        "id": 60,
+        
         "name": "Paris Saint-Germain 2004/2005 Season Shirt",
         "price": 6000,
         "description": "Official shirt worn by Paris Saint-Germain during the 2004/2005 season.",
@@ -770,7 +743,7 @@
         "year": 2004
       },
       {
-        "id": 61,
+        
         "name": "Olympique de Marseille 2002/2003 Season Shirt",
         "price": 5500,
         "description": "Official shirt worn by Olympique de Marseille during the 2002/2003 season.",
@@ -782,7 +755,7 @@
         "year": 2002
       },
       {
-        "id": 62,
+        
         "name": "AS Monaco 2000/2001 Season Shirt",
         "price": 5000,
         "description": "Official shirt worn by AS Monaco during the 2000/2001 season.",
@@ -794,7 +767,7 @@
         "year": 2000
       },
       {
-        "id": 63,
+        
         "name": "Manchester United 2007/2008 Season Shirt",
         "price": 5500,
         "description": "Official shirt worn by Manchester United during the 2007/2008 season.",
@@ -806,7 +779,7 @@
         "year": 2007
       },
       {
-        "id": 64,
+        
         "name": "Liverpool 2004/2005 Season Shirt",
         "price": 5000,
         "description": "Official shirt worn by Liverpool during the 2004/2005 season.",
@@ -818,7 +791,7 @@
         "year": 2004
       },
       {
-        "id": 65,
+        
         "name": "Napoli 1989/1990 Season Shirt",
         "price": 5000,
         "description": "Official shirt worn by Liverpool during the 2004/2005 season.",
@@ -830,7 +803,7 @@
         "year": 1989
       },
       {
-        "id": 66,
+        
         "name": "Porto 2003/2004 Season Shirt",
         "price": 5000,
         "description": "Official shirt worn by Liverpool during the 2004/2005 season.",
@@ -842,7 +815,7 @@
         "year": 2003
       },
       {
-        "id": 67,
+        
         "name": "Sporting 2005/2006 Season Shirt",
         "price": 5000,
         "description": "Official shirt worn by Liverpool during the 2004/2005 season.",
@@ -854,7 +827,7 @@
         "year": 2003
       },
       {
-        "id": 68,
+        
         "name": "Benfica 2008/2009 Season Shirt",
         "price": 5000,
         "description": "Official shirt worn by Liverpool during the 2004/2005 season.",

@@ -4,14 +4,18 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ItemPath, ItemCount } from '../index'
 import { CartContext } from '../../context/CartContext'
+import Swal from 'sweetalert2'
 
 export const ItemDetail = ({id, name, price, description, country, category, continent, img, year, stock, size}) => {  
+  const [quantityOnAdd, setquantityOnAdd] = useState(0)
+
   const { addItem } = useContext(CartContext);
 
   const handleOnAdd = ( quantity ) => {      
       const item = {id, price, name, stock, img};
-
-      addItem(item, quantity);      
+      quantity > 1 ? Swal.fire({icon: "success", text: "Se agregaron tus productos al carrito"}) : Swal.fire({icon: "success", text: "Se agrego su producto al carrito"})                
+      setquantityOnAdd(quantity);
+      addItem(item, quantity);            
    }
 
   return (
@@ -35,17 +39,19 @@ export const ItemDetail = ({id, name, price, description, country, category, con
             <div className='py-2 text-green-700'><Flag country={country} size={24}/></div>                                                                       
             <hr/>                                                                            
             <p className='py-2 text-green-700'>Precio: <span className='text-black font-bold'>${price}</span></p>                                                                            
-          </div>
-          <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
-          {/*
+          </div>          
+          {            
             quantityOnAdd > 0 ? (                 
-                <div>
-                  <Link to="/cart">"<button className='bg-green-700 h-10 w-52 mt-1 flex items-center pl-2 place-content-center hover:cursor-pointer hover:bg-green-800 hover:rounded transition-all duration-300'>
-                    Terminar Compra</button></Link>
-                  <button onClick={() => { quantityOnAdd === 0 }} className='text-green-700 bg-white'>Volver</button>
+                <div className='flex items-center'>
+                  <Link to="/">
+                    <button className='bg-gray-100 h-10 w-36 mx-2 mt-1 hover:cursor-pointer border border-green-700 text-green-700 hover:bg-gray-200 transition-all duration-300'>Seguir comprando</button>
+                  </Link>
+                  <Link to="/cart">
+                    <button onClick={() => {}}className='bg-green-700 h-10 w-52 mt-1 hover:cursor-pointer hover:bg-green-800 transition-all duration-300'>Terminar Compra</button>                                      
+                  </Link>                                      
                 </div>                
-              ) :            
-            */}                    
+              ): <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>           
+            }                    
         </section>
     </article>
     </div>    

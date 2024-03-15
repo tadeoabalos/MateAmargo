@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { ShoppingCart } from '../car-widget/assets/ShoppingCart';
+import { FaCartPlus } from "react-icons/fa";
 
 export const ItemCount = ({initial, stock, onAdd}) => {
     const [quantity, setQuantity] = useState(initial);
@@ -26,7 +26,7 @@ export const ItemCount = ({initial, stock, onAdd}) => {
             <button className='bg-green-700 h-10 w-52 mt-1 flex items-center pl-2 place-content-center hover:cursor-pointer hover:bg-green-800 hover:rounded transition-all duration-300' 
             onClick={() => onAdd(quantity)} disabled = {!stock}>                                
                 <p>Agregar al carrito</p>
-                <ShoppingCart />
+                <FaCartPlus />                
             </button>
         </div>
     </div>

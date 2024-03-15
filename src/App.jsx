@@ -3,10 +3,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ItemListContainer, ItemDetailContainer, NavBar, NoPage, Cart } from './components/index'
 import './index.css'
 import { CartContextProvider } from './context/CartContext'
+import { WishListContextProvider } from './context/WishListContext'
+import { CheckOut } from './components/CheckOut/CheckOut'
+import { WishList } from './components/WishList/WishList'
 function App() {
   return (
     <>
-      <CartContextProvider>
+      <CartContextProvider>     
+      <WishListContextProvider>
         <BrowserRouter>        
           <NavBar />
           <Routes>
@@ -17,9 +21,12 @@ function App() {
             <Route path='/category/:category/:country' element={<ItemListContainer /> }/>
             <Route path='/category/:category' element={<ItemListContainer /> }/>    
             <Route path='/category/worldcup/:wc' element={<ItemListContainer /> }/>                  
+            <Route path='/checkout' element={<CheckOut /> }/>                  
+            <Route path='/mateados' element={<WishList /> }/>                  
             <Route path='*' element={<NoPage /> }/>                           
           </Routes>      
       </BrowserRouter>
+    </WishListContextProvider> 
     </CartContextProvider>
   </>
   )
