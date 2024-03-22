@@ -4,7 +4,7 @@ import { ItemListContainer, ItemDetailContainer, NavBar, NoPage, Cart } from './
 import './index.css'
 import { CartContextProvider } from './context/CartContext'
 import { WishListContextProvider } from './context/WishListContext'
-import { CheckOut } from './components/CheckOut/CheckOut'
+import { CheckOut } from './components/index'
 import { WishList } from './components/WishList/WishList'
 import { Footer } from './components/Footer/Footer'
 function App() {

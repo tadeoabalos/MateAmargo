@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Flag } from '../Item/Assets/Flag'
+import { Flag } from '../index'
 import { LikeButton } from '../LikeButton/likeButton'
 import { WishListContext } from '../../context/WishListContext'
 

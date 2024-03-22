@@ -1,10 +1,8 @@
 import './item.css';
-import { Link } from 'react-router-dom';
-import { Flag } from '../Item/Assets/Flag';
 import { useState, useContext } from 'react';
-import { LikeButton } from '../LikeButton/likeButton';
-import { WishListContext } from '../../context/WishListContext';
-import { AddCartButton } from '../AddCartButton/AddCartButton';
+import { Link } from 'react-router-dom';
+import { Flag, LikeButton, AddCartButton } from '../../../index';
+import { WishListContext } from '../../../../context/WishListContext';
 
 export const Item = ({ id, name, price, country, img, stock, size }) => {  
   

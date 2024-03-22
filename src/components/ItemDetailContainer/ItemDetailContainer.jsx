@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { ItemDetail } from '../ItemDetail/ItemDetail';
+import { ItemDetail } from '../index';
 import { useParams } from 'react-router-dom';
 import { db } from '../../config/firebaseConfig';
 import { doc, getDoc } from 'firebase/firestore';
-import { BounceLoader, BeatLoader } from 'react-spinners';
+import { BeatLoader } from 'react-spinners';
+
 export const ItemDetailContainer = () => {
 
     const [products, setProducts] = useState(null);

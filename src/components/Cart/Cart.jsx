@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
-import { ItemCart } from "../ItemCart/ItemCart"
+import { ItemCart } from "../index"
 import { Link } from "react-router-dom"
 import { FaRegFaceSadTear } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";

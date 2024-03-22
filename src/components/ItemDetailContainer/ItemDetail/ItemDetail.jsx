@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
-import { Flag } from '../Item/Assets/Flag'
+import { Flag } from '../../../assets/Flag'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ItemPath, ItemCount } from '../index'
-import { CartContext } from '../../context/CartContext'
+import { ItemPath, ItemCount } from '../../index'
+import { CartContext } from '../../../context/CartContext'
 import Swal from 'sweetalert2'
-import { WishListContext } from '../../context/WishListContext'
+import { WishListContext } from '../../../context/WishListContext'
 
 export const ItemDetail = ({id, name, price, description, country, category, continent, img, year, stock, size}) => {  
   const [quantityOnAdd, setquantityOnAdd] = useState(0)

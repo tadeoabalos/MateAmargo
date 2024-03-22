@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
-import { ItemCountCart } from '../ItemCount/ItemCountCart'
-import { CartContext } from '../../context/CartContext'
+import { ItemCountCart } from '../../ItemCount/ItemCountCart'
 import Swal from 'sweetalert2'
 
 const getStockMessage = (stock) => {

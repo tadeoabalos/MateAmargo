@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
-import { CartContext } from '../../context/CartContext'
+import { CartContext } from '../../../context/CartContext'
 import { serverTimestamp, addDoc, collection} from 'firebase/firestore'
 import { useState } from 'react'
-import { db } from '../../config/firebaseConfig'
+import { db } from '../../../config/firebaseConfig'
 import Swal from 'sweetalert2'
 import { Link } from 'react-router-dom'
-import { ItemCartCheckOut } from '../ItemCart/ItemCartCheckOut'
+import { ItemCartCheckOut } from '../../index'
 import { BounceLoader } from "react-spinners";
-import mataglogo from "../../assets/matag_logo.png"
+import mataglogo from "../../../assets/matag_logo.png"
 
 export const CheckOut = () => {
 

@@ -9,7 +9,7 @@ Este proyecto es un ecommerce de camisetas retro desarrollada para la plataforma
 - **Carrito de compras:** Los usuarios pueden agregar camisetas al carrito de compras y ver un resumen de su pedido, cuentan con botones para eliminar productos del carrito y tambien cuentan con un botón para vacíar el carro.
 - **Lista de deseos:** Los usuarios pueden agregar camisetas a la lista de deseos para luego consultar esta lista y agregar esos productos al carrito.
 
-###Tecnologías Utilizadas
+### Tecnologías Utilizadas
 - **Vite:** Herramienta de construcción rápida para proyectos web modernos, proporciona una experiencia de desarrollo en tiempo real.
 - **React:** Framework de JavaScript utilizado para construir la interfaz de usuario de la aplicación.
 - **React Icons:** Librería que proporciona iconos para mejorar la interfaz de usuario.
@@ -21,15 +21,16 @@ Este proyecto es un ecommerce de camisetas retro desarrollada para la plataforma
 - **FlagsApi:** API utilizada para obtener banderas de países y sus detalles correspondientes en la aplicación.
 - **SweetAlert:** Librería para mostrar alertas y modales personalizados en la aplicación.
 
-###Instalación y uso
+### Instalación y uso
 
 **1.** Clona este repositorio en tu máquina local usando el comando: **git clone https://github.com/tadeoabalos/mateamargo.git**
 **2.** Instala las dependencias del proyecto utilizando el comando **npm install**.
 **3.** Configura tu proyecto en Firebase y actualiza las credenciales en el archivo de configuración de Firebase.
 **4.** Inicia la aplicación utilizando el comando **npm start**.
 
-###Contacto
-**LinkedIn:** https://www.linkedin.com/in/tadeoabalos/
-**CV:** https://drive.google.com/file/d/1K65QlriCIq5Z32gy9ngWIh1c4oPi4PIP/view?usp=sharing
+### Contacto
+[Github](https://github.com/tadeoabalos/)
+[LinkedIn](https://www.linkedin.com/in/tadeoabalos/recent-activity/all/)
+[Currículum](https://drive.google.com/file/d/1K65QlriCIq5Z32gy9ngWIh1c4oPi4PIP/view?usp=sharing)
 **Número de teléfono:** (+54 9) 11-2387-6174
 **Correo electrónico:** tadeoabalos@outlook.com
