@@ -13,6 +13,7 @@ Este proyecto es un ecommerce de camisetas retro desarrollada para la plataforma
 - **Vite:** Herramienta de construcción rápida para proyectos web modernos, proporciona una experiencia de desarrollo en tiempo real.
 - **React:** Framework de JavaScript utilizado para construir la interfaz de usuario de la aplicación.
 - **React Icons:** Librería que proporciona iconos para mejorar la interfaz de usuario.
+- **React Spinners:** Uso de librería de React que proporciona spinners (indicadores de carga) para mejorar la interfaz de usuario.
 - **React Hooks:** Característica de React que permite el uso de estado y otras características de React en componentes de función. 
 - **React Router DOM:** Librería que proporciona enrutamiento en la aplicación React para manejar la navegación entre diferentes componentes.
 - **Firebase:** Plataforma de desarrollo de aplicaciones móviles y web de Google utilizada para la autenticación de usuarios, almacenamiento de datos en tiempo real y mucho más.

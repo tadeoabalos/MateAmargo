@@ -51,18 +51,16 @@ export const CartContextProvider = ({children}) => {
                 cartCopy[index].quantity += quantity ;
                 cartCopy[index].subTotal += quantity * item.price ;      
                 setCart(cartCopy)
+                return true;
             }
             else {                
-                Swal.fire({
-                    icon: "error",
-                    title: "Oops...",
-                    text: "No hay mas stock!",
-                  });
+                return false;
             }
         }
         else{
             const newItem = { ...item , quantity, subTotal: item.price * quantity }
-            setCart([...cart, newItem])            
+            setCart([...cart, newItem]) 
+            return true;           
         }
      }   
 

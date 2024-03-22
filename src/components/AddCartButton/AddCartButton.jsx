@@ -10,13 +10,18 @@ export const AddCartButton = ({ id, price, name, stock, img, size }) => {
 
     const handleOnAdd = () => {
         const item = {id, price, name, stock, img, size};
-        addItem2(item, 1);
+        const flag = addItem2(item, 1);
+        flag ? 
         Swal.fire({
             position: "top-end",
             icon: "success",
             title: "Se agregó tu producto al carrito",
             showConfirmButton: false,
-            timer: 1500
+            timer: 1000
+          }) : Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "No hay mas stock!",
           });
     }
   return (

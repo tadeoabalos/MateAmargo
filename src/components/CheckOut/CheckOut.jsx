@@ -7,6 +7,8 @@ import Swal from 'sweetalert2'
 import { Link } from 'react-router-dom'
 import { ItemCartCheckOut } from '../ItemCart/ItemCartCheckOut'
 import { BounceLoader } from "react-spinners";
+import mataglogo from "../../assets/matag_logo.png"
+
 export const CheckOut = () => {
 
     const { cart, clearCart, total } = useContext(CartContext);
@@ -68,18 +70,20 @@ export const CheckOut = () => {
 
     return (
         isLoading ? <div className="h-3/4 flex items-center justify-center flex-col"><BounceLoader color={'#274939'} loading={isLoading} size={150} aria-label="Loading Spinner" data-testid="loader" /></div> :
-        <div>
+        <>
             {total < 1 ? (
-                    <div className='flex flex-col items-start justify-start h-screen m-10'>
-                        <h1 className='text-4xl text-green-800 font-bold mb-2'>Proceso de checkout</h1>
-                        <h1 className='text-2xl text-green-800 mb-2'>¡Muchas gracias por su compra!</h1>
-                        <h1 className='text-2xl text-green-800 mb-4'>Su numero de seguimiento es: {orderId}</h1>
-                        <Link to="/">
-                        <button className='bg-green-800 hover:bg-green-900 text-white w-44 h-10'>Ir a inicio</button>
-                        </Link>
+                    <div className='flex flex-col items-center justify-center h-4/6 m-10'>     
+                        <div className='bg-white rounded border h-1/2 w-2/5 flex items-center justify-center flex-col shadow-2xl'>
+                            <img src={mataglogo}></img>
+                            <h1 className='text-4xl text-green-800 mb-2 mt-2'>¡Muchas gracias por su compra!</h1>
+                            <h1 className='text-xl text-green-800 mb-4'>Su número de seguimiento es: {orderId}</h1>                            
+                            <Link to="/">
+                                <button className='bg-green-800 hover:bg-green-900 text-white w-44 h-10'>Ir a inicio</button>
+                            </Link>
+                        </div>                                       
                     </div>
             ) : (
-                <div className="flex m-10 justify-around h-2/3">
+                <div className="flex m-10 justify-around h-3/5">
                     <form className="w-full max-w-sm" onSubmit={handleSubmit}>
                         <div className="mb-4">
                             <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-1">Nombre</label>
@@ -121,6 +125,6 @@ export const CheckOut = () => {
                     </div>
                 </div>
             )}
-        </div>
+        </>
     );    
 }

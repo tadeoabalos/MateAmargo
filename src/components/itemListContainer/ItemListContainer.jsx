@@ -49,7 +49,7 @@ export const ItemListContainer = ({ greeting }) => {
   return (
     <>
       <h3 className="greeting">{greeting}</h3>          
-      {isLoading ? <div className="h-3/4 flex items-center justify-center flex-col"><BounceLoader color={'#274939'} loading={isLoading} size={150} aria-label="Loading Spinner" data-testid="loader" /></div>                 
+      {isLoading ? <div className="h-3/4 flex items-center justify-center flex-col"><BounceLoader color={'#274939'} loading={isLoading} size={100} aria-label="Loading Spinner" data-testid="loader" /></div>                 
        : <ItemList products={products} /> }         
     </>
   )

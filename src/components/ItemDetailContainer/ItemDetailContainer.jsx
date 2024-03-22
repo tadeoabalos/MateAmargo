@@ -3,6 +3,7 @@ import { ItemDetail } from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 import { db } from '../../config/firebaseConfig';
 import { doc, getDoc } from 'firebase/firestore';
+import { BounceLoader, BeatLoader } from 'react-spinners';
 export const ItemDetailContainer = () => {
 
     const [products, setProducts] = useState(null);
@@ -19,17 +20,18 @@ export const ItemDetailContainer = () => {
                     ...response.data()
                 }
                 setProducts(product);
+                setIsLoading(false);  
             })
     }
 
     useEffect(() => {
-      setIsLoading(false);  
+      
       getProductDB(id);
     }, [])
         
     return (
         <div className='h-5/6 mt-8' >
-            {isLoading ? <h3>Cargando...</h3> : <ItemDetail {...products} /> }    
+            {isLoading ? <div className="h-3/4 flex items-center justify-center flex-col"><BeatLoader color={'#274939'} loading={isLoading} size={25} aria-label="Loading Spinner" data-testid="loader" /></div> : <ItemDetail {...products} /> }    
         </div>
     )
 }
