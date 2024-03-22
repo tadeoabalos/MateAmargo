@@ -29,7 +29,7 @@ Este proyecto es un ecommerce de camisetas retro desarrollada para la plataforma
 **4.** Inicia la aplicación utilizando el comando **npm start**.
 
 ### Visualización del proyecto
-- Para visualizar el proyexto sin tener que clonarlo entre al siguiente link de Netlify [Netlify](https://65fe0b4ffb849b7a56c126a5--startling-torte-956b36.netlify.app/)
+- Para visualizar el proyecto sin tener que clonarlo entre al siguiente link de Netlify [Netlify](https://65fe0b4ffb849b7a56c126a5--startling-torte-956b36.netlify.app/)
 
 ### Contacto
 [Github](https://github.com/tadeoabalos/)
