@@ -6,6 +6,7 @@ import { CartContextProvider } from './context/CartContext'
 import { WishListContextProvider } from './context/WishListContext'
 import { CheckOut } from './components/CheckOut/CheckOut'
 import { WishList } from './components/WishList/WishList'
+import { Footer } from './components/Footer/Footer'
 function App() {
   return (
     <>
@@ -24,7 +25,8 @@ function App() {
             <Route path='/checkout' element={<CheckOut /> }/>                  
             <Route path='/mateados' element={<WishList /> }/>                  
             <Route path='*' element={<NoPage /> }/>                           
-          </Routes>      
+          </Routes> 
+          <Footer />     
       </BrowserRouter>
     </WishListContextProvider> 
     </CartContextProvider>

@@ -4,14 +4,24 @@ import { Flag } from '../Item/Assets/Flag';
 import { useState, useContext } from 'react';
 import { LikeButton } from '../LikeButton/likeButton';
 import { WishListContext } from '../../context/WishListContext';
+import { AddCartButton } from '../AddCartButton/AddCartButton';
 
-export const Item = ({ id, name, price, country, img }) => {  
-  const [like, setLike] = useState(false);
-  const { addItem , removeItem } = useContext(WishListContext);
+export const Item = ({ id, name, price, country, img, stock, size }) => {  
+  
+  const { addItem , removeItem, wishList } = useContext(WishListContext);
+
+  const isLike = (id) => {
+    const wishListCopy = [...wishList] ;
+    const index = wishListCopy.findIndex( product => product.id === id );
+    if(index !== -1) return true;
+    else return false;
+  }
+
+  const [like, setLike] = useState(isLike(id));
 
   const handleOnAdd = () => {      
-    const item = { id, price, name, img };                    
-    addItem(item);            
+    const item = { id, price, name, img, country, size };                    
+    addItem(item, 1);            
   };
 
   return (
@@ -34,10 +44,13 @@ export const Item = ({ id, name, price, country, img }) => {
         <section className='card-foot'>
             <h4 className='card-name'>{name}</h4>
             <div className='card-detail'>
-              <p className='card-price'>${price}</p>  
-              <Link to={`/detalle_camiseta/${id}`}>
-                <button className='card-button'>Detalle</button>
-              </Link>              
+              <p className='card-price'>${price}</p> 
+              <div className='flex flex-nowrap'>
+                <Link to={`/detalle_camiseta/${id}`}>
+                  <button className='card-button'>Detalle</button>
+                </Link>
+                <AddCartButton id={id} price={price} name={name} img={img} stock={stock} size={size}/> 
+              </div>                            
             </div>                                                   
         </section>                 
     </article>

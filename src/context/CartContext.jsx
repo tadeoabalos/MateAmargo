@@ -1,6 +1,5 @@
 import { createContext, useEffect, useState} from "react";
-import { Item } from "../components";
-
+import Swal from "sweetalert2";
 export const CartContext = createContext(null);
 
 export const CartContextProvider = ({children}) => {
@@ -33,17 +32,39 @@ export const CartContextProvider = ({children}) => {
                 cartCopy[index].quantity += 1 ;                 
                 cartCopy[index].subTotal += 1 * cartCopy[index].price ; 
                 setCart(cartCopy) ;
-                
-            }            
+            } 
             else {
-                console.log("No hay mas stock");
-            }
-
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "No hay mas stock!",
+                  });
+            }          
         }
-        else {
-            console.log("El producto no se encuentra en el carrito.");
-        }                           
     }
+
+    const addItem2 = (item, quantity) => {                
+        const cartCopy = [...cart] ;        
+        const index = cartCopy.findIndex( product => product.id === item.id )
+        if(index !== -1){     
+            if((cartCopy[index].quantity + quantity) <= item.stock ){
+                cartCopy[index].quantity += quantity ;
+                cartCopy[index].subTotal += quantity * item.price ;      
+                setCart(cartCopy)
+            }
+            else {                
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "No hay mas stock!",
+                  });
+            }
+        }
+        else{
+            const newItem = { ...item , quantity, subTotal: item.price * quantity }
+            setCart([...cart, newItem])            
+        }
+     }   
 
     const subtractItem = (id, quantity) => {        
         const cartCopy = [...cart] ;
@@ -54,13 +75,7 @@ export const CartContextProvider = ({children}) => {
                 cartCopy[index].subTotal -= 1 * cartCopy[index].price ; 
                 setCart(cartCopy) ;
             }            
-            else {
-                console.log("No podes comprar menos de 1 producto");
-            }
-        }
-        else {
-            console.log("El producto no se encuentra en el carrito.");
-        }                     
+        }                   
     }
 
     const removeItem = (id) => {
@@ -88,6 +103,7 @@ export const CartContextProvider = ({children}) => {
         totalItems, 
         total,      
         addItem,
+        addItem2,
         removeItem, 
         clearCart,
         plusItem,

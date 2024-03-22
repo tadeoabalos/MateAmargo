@@ -5,17 +5,20 @@ import { Link } from 'react-router-dom'
 import { ItemPath, ItemCount } from '../index'
 import { CartContext } from '../../context/CartContext'
 import Swal from 'sweetalert2'
+import { WishListContext } from '../../context/WishListContext'
 
 export const ItemDetail = ({id, name, price, description, country, category, continent, img, year, stock, size}) => {  
   const [quantityOnAdd, setquantityOnAdd] = useState(0)
 
   const { addItem } = useContext(CartContext);
+  const {removeItem} = useContext(WishListContext);
 
   const handleOnAdd = ( quantity ) => {      
-      const item = {id, price, name, stock, img};
+      const item = {id, price, name, stock, img, size};
       quantity > 1 ? Swal.fire({icon: "success", text: "Se agregaron tus productos al carrito"}) : Swal.fire({icon: "success", text: "Se agrego su producto al carrito"})                
       setquantityOnAdd(quantity);
-      addItem(item, quantity);            
+      addItem(item, quantity); 
+      removeItem(id);           
    }
 
   return (

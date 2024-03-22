@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
-import { ItemCountCart } from '../components/ItemCount/ItemCountCart'
-import { CartContext } from '../context/CartContext'
+import { ItemCountCart } from '../ItemCount/ItemCountCart'
+import { CartContext } from '../../context/CartContext'
+import Swal from 'sweetalert2'
 
 const getStockMessage = (stock) => {
     if(stock >= 5) {
@@ -23,6 +24,26 @@ export const ItemCart = ( {name, stock, price, quantity, itemId, removeItem, img
         subtractItem(itemId, quantity)
     }
 
+    const handleOnRemoveItem = (name, itemId) => {
+        Swal.fire({
+            title: `¿Desea eliminar ${name} de su carrito?`,
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Si, estoy seguro"
+          }).then((result) => {
+            if (result.isConfirmed) {
+                removeItem(itemId),
+                Swal.fire({
+                    title: "Listo",
+                    text: "Se ha removido el item del carrito",
+                    icon: "success"
+                });                
+            }
+          });
+    }
+
   return (    
         <article className='bg-white w-full h-32 border flex flex-row items-center'>
             <div className='flex w-28 justify-center'>
@@ -31,7 +52,7 @@ export const ItemCart = ( {name, stock, price, quantity, itemId, removeItem, img
             <div className='px-8 w-2/5'>
                 <p className='font-bold text-black text-xl truncate'>{name}</p>
                 <ul>
-                    <li className='py-4'><button onClick={()=>removeItem(itemId)} className='text-green-700'>Eliminar</button></li>
+                    <li className='py-4'><button onClick={()=>handleOnRemoveItem(name, itemId)} className='text-green-700'>Eliminar</button></li>
                 </ul>  
             </div>
             <div className='text-gray-500 item-center w-80'>

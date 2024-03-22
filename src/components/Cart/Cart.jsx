@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
-import { ItemCart } from "../../ItemCart/ItemCart"
+import { ItemCart } from "../ItemCart/ItemCart"
 import { Link } from "react-router-dom"
 import { FaRegFaceSadTear } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
@@ -30,8 +30,9 @@ export const Cart = () => {
   }
 
   return (
-    <div className="flex justify-center">
-      <div className="w-3/5 m-2 p-2 rounded bg-white">        
+    <div className="h-3/4">
+    <div className=" max-h-full flex justify-center">
+      <div className=" max-h-full overflow-auto w-3/5 m-2 p-2 rounded bg-white mb-5">        
         { cart.length !== 0 ? cart.map((item)=> (   
         <div key={item.id} className="flex place-content-center">          
           <ItemCart name={item.name} price={item.subTotal} stock={item.stock} quantity={item.quantity} itemId={item.id} removeItem={removeItem} img={item.img} 
@@ -43,7 +44,7 @@ export const Cart = () => {
             <span className="text-green-700 text-3xl">Tu camiseta soñada sigue esperando... </span>
             <Link to="/" className="w-44"><button className="bg-green-700 text-white place-content-center w-48 ml-1 my-4 h-12 hover:bg-green-800 flex justify-center items-center">Descubrir productos<div className="ml-2"><FaSearch /></div></button></Link>
         </div>}
-        </div>
+      </div>
       { total ? 
       <article className="bg-white w-1/4 h-64 rounded m-2 p-4">
         <div className="h-1/6 text-white flex items-center text-xl border-b bg-green-700 p-2 ">Resumen de compra: </div>
@@ -57,6 +58,7 @@ export const Cart = () => {
         </div>        
       </article>  
       : <article className="bg-gray-100 w-1/4 h-64 rounded m-2 p-4 text-green-700 flex justify-center items-center text-xl"><p className="mr-2">Carrito vacío</p> <FaRegFaceSadTear /></article>}      
+    </div>
     </div>    
   )
 }

@@ -8,7 +8,7 @@ export const CartWidget = () => {
     <Link to="/cart">
       <div className='flex items-center'>      
           <ShoppingCart></ShoppingCart>
-          <h4 className='text-green-700 font-bold ml-2'> {totalItems} </h4>             
+          <h4 className='font-bold ml-2'> {totalItems} </h4>             
       </div>
     </Link> 
   )
