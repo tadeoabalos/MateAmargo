@@ -28,6 +28,9 @@ Este proyecto es un ecommerce de camisetas retro desarrollada para la plataforma
 **3.** Configura tu proyecto en Firebase y actualiza las credenciales en el archivo de configuración de Firebase.
 **4.** Inicia la aplicación utilizando el comando **npm start**.
 
+### Visualización del proyecto
+- Para visualizar el proyexto sin tener que clonarlo entre al siguiente link de Netlify [Netlify](https://65fe0b4ffb849b7a56c126a5--startling-torte-956b36.netlify.app/)
+
 ### Contacto
 [Github](https://github.com/tadeoabalos/)
 [LinkedIn](https://www.linkedin.com/in/tadeoabalos/recent-activity/all/)
