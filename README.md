@@ -1,5 +1,5 @@
 ## Proyecto Ecommerce Coder House
-Este proyecto es un ecommerce de camisetas retro desarrollada para la plataforma Coderhouse. En mi proyecto utilizo **React.js** como framework frontend, **Tailwind CSS** como marco de trabajo CSS y **Firebase** como base de datos.
+Este proyecto consiste en una aplicación de comercio electrónico (e-commerce) desarrollada como una Single Page Application (SPA) utilizando React como herramienta base para la creación de la interfaz de usuario (UI). Se implementan diversos patrones y conceptos específicos de React, como el Virtual DOM y los hooks, para lograr una experiencia de usuario fluida y eficiente.
 
 ### Funcionalidades
 
